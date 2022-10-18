@@ -18,9 +18,9 @@ body {
 }
 
 h1 {   /* Title: Our Menu */
-	margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-align: center;
 	font-size: 175%;      /* heading 75% larger than section title */
 }
 
