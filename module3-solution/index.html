@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<!-- below font: lora, is used for the name/title of restaurant -->
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+		<!-- nav bar for the top header part of the website, with -->
+		<!-- 2 classes provided by Bootstrap -->
+    <!-- <nav id="header-nav" class="navbar navbar-default"> -->
+		<!-- for static refer to:
+			   https://getbootstrap.com/docs/3.3/components/#navbar -->
+		<nav id="header-nav" class="navbar navbar-default navbar-static-top">
+			<!-- Note: div with class container is declared inside header-nav so -->
+			<!-- as to prevent the yellow stretching all the way to browser border -->
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1><b>Food, LLC</b></h1></a> <!-- use <a make it clickabe -->
+          </div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<!-- screen readers only - will not show on browser screen -->
+            <span class="sr-only">Toggle navigation</span>
+						<!-- defining horizontal lines inside the menu button -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> <!-- End "navbar-header" -->
+
+      </div> <!-- End div "container" --> 
+    </nav> <!-- End "#header-nav" -->
+	</header>
+
+		<section class="sect-cat">
+				<!-- this div here is the div that contains all the menus, & all of --> <!-- the navigation buttons. collapse.js will use collapsible-nav -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+					<!-- create the menu list: unordered list - align to right -->
+          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="visible-xs active"> <!-- ensure if menu is selected -->
+							                             <!-- that it shows so -->
+              <!-- use <a href="#"> during testing -->
+							<!-- otherwise goto id chicken when clicked -->
+							<a href="#chicken">  
+									<!-- use special fonts: monochromatic icons and symbolss -->
+									<!-- Also note the break (br) which tells it after you -->
+									<!-- draw the cutlery (fork/knife) introduce a break before --> <!-- writing Menu and hide if screen is: xs -->
+									<!-- the glyphicon icons used below are from bootstrap -->
+								<!-- <span class="glyphicon glyphicon-cutlery"></span> -->
+								<br class="hidden-xs"> Chicken
+							</a>
+						</li>
+						<li>
+              <!-- use <a href="#"> during testing -->
+							<a href="#beef">    <!-- goto id beef on clicked -->
+								<!-- <span class="glyphicon glyphicon-cutlery"></span> -->
+								<br class="hidden-xs"> Beef
+							</a>
+						</li>
+						<li>
+							<!-- use <a href="#"> during testing -->
+							<a href="#sushi">    <!-- goto id sushi when clicked -->
+								<!-- <span class="glyphicon glyphicon-cutlery"></span> -->
+								<br class="hidden-xs"> Sushi
+							</a>
+            </li>
+					</ul> <!--End "#nav-list" -->
+        </div> <!-- End "#collapsable-nav"  ".navbar-collapse" -->
+		</section>
+
+		<section class="sect-2">
+			<h1 id="h1" class="text-center"><b> Our Menu</b></h1>	
+			<section class="row">
+				<div class="col-xs-12">
+					<div class="sect-3">
+						<h2 id="chicken" class="text-center"> Chicken</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut urna id vestibulum. Praesent porttitor, mauris dapibus finibus pulvinar, orci turpis dapibus leo, ornare scelerisque ligula mauris a mauris. Sed sem lacus, bibendum at interdum eget, posuere non nisi. Sed ligula odio, pellentesque at consequat non, vestibulum ac ex. Quisque ut pellentesque ex, ut viverra velit. Phasellus a lobortis arcu, ut porttitor sem. Vivamus pellentesque augue quis nunc placerat, a vulputate urna imperdiet. Fusce a ex felis. Vestibulum semper urna lorem. Praesent fringilla consequat tempor. Praesent iaculis nulla at nisi dictum luctus. Nulla sit amet neque a risus rutrum efficitur. Ut nunc magna, pellentesque sit amet elit non, porttitor fermentum orci. Sed vitae mauris risus.
+							Mauris facilisis euismod imperdiet. Vivamus dictum mauris nisi, nec vehicula velit hendrerit non. Vestibulum congue enim commodo porta tempor. Cras vulputate convallis urna ut interdum. Ut eleifend nibh sit amet finibus fringilla. Aenean vehicula porta turpis lobortis auctor. Nullam pretium malesuada sollicitudin. Maecenas blandit sit amet nisl ac vulputate. Nam sit amet mi sed ipsum varius imperdiet. Aliquam mi odio, viverra in varius vitae, aliquet vitae nisi. In non ligula et risus lacinia mattis. Nullam dolor turpis, ultricies a vestibulum nec, mollis ut tellus.
+
+							Praesent in accumsan leo. Curabitur id venenatis sem, vestibulum semper erat. Suspendisse sodales purus eu lobortis sagittis. Curabitur et lacinia dolor, a dapibus lacus. Integer aliquet orci mi, vel condimentum dolor suscipit non. Etiam pharetra odio ut nisl feugiat, vel varius enim bibendum. Praesent est justo, cursus non nibh et, fringilla venenatis arcu. Sed nisl augue, rutrum quis placerat eget, iaculis ut magna. Vivamus facilisis pharetra orci id sodales. Vivamus sagittis, nunc pellentesque aliquet lacinia, tortor metus fringilla nibh, sed ornare neque neque dictum orci. Ut euismod velit ac mattis fermentum. Aliquam erat volutpat.
+							
+							Nullam ipsum odio, elementum sed sem non, facilisis hendrerit lectus. Praesent consequat neque sit amet viverra tempor. Vivamus efficitur eleifend maximus. Fusce blandit imperdiet erat, a maximus nulla semper ac. Nullam a augue imperdiet, finibus est id, eleifend mauris. Nam condimentum ultricies euismod. Nunc ut lectus eu elit tempus dignissim. Donec nulla arcu, condimentum vitae tortor a, convallis convallis urna. Donec tincidunt faucibus odio vel tincidunt. Suspendisse feugiat libero auctor justo vulputate, vel placerat risus vehicula. Cras at massa ac leo porta luctus vitae at nisi.
+							
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nunc ut varius lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel tortor dapibus, pharetra erat a, imperdiet diam. Sed sit amet convallis nunc. Aliquam interdum fringilla iaculis. Sed at nunc leo. Integer vel dui lectus. Sed scelerisque mi at sollicitudin luctus. Nulla augue nisi, posuere et rutrum eget, accumsan sed justo. Vivamus elementum egestas augue, eget interdum nulla pharetra nec.
+						</p>
+						<div>
+							<p><br><hr></p>
+							<p class="text-right"><a href="#top">(End of Chicken Section)    Back to Top</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> <!-- End section "row" -->
+
+			<section class="row">
+				<div class="col-xs-12">
+					<div class="sect-3">
+						<h2 id="beef" class="text-center"> Beef</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut urna id vestibulum. Praesent porttitor, mauris dapibus finibus pulvinar, orci turpis dapibus leo, ornare scelerisque ligula mauris a mauris. Sed sem lacus, bibendum at interdum eget, posuere non nisi. Sed ligula odio, pellentesque at consequat non, vestibulum ac ex. Quisque ut pellentesque ex, ut viverra velit. Phasellus a lobortis arcu, ut porttitor sem. Vivamus pellentesque augue quis nunc placerat, a vulputate urna imperdiet. Fusce a ex felis. Vestibulum semper urna lorem. Praesent fringilla consequat tempor. Praesent iaculis nulla at nisi dictum luctus. Nulla sit amet neque a risus rutrum efficitur. Ut nunc magna, pellentesque sit amet elit non, porttitor fermentum orci. Sed vitae mauris risus.
+							Quisque lobortis nibh eu magna tincidunt vulputate. Nulla sed ante suscipit, porta odio vel, sagittis libero. Nulla laoreet vel mi eu lobortis. Vivamus sodales cursus mauris, ut pretium lorem mattis sit amet. Sed orci dolor, semper ac consequat a, interdum ac nibh. Quisque ornare ex orci, id elementum urna ultrices nec. Etiam eu orci libero. Mauris porttitor ex lectus, non cursus urna finibus in. Quisque ornare diam nec efficitur euismod. Proin erat nisl, vulputate non orci eu, luctus ornare sem. Nam pharetra quam in tellus imperdiet, eu ornare mi sodales. Duis id tempor lectus.
+
+							Quisque turpis mi, interdum ut vehicula eu, volutpat ullamcorper augue. Etiam vel ipsum pellentesque, malesuada nulla ac, rutrum justo. Morbi eu turpis ultrices, malesuada neque eu, consectetur odio. Cras feugiat consequat mauris, et varius justo tincidunt et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ac quam nulla. Aliquam felis mauris, efficitur semper risus at, efficitur sollicitudin neque. Aliquam iaculis enim at erat porttitor, vel consequat nibh luctus. Quisque egestas id justo eget posuere. Suspendisse ipsum nisi, eleifend eu sagittis in, mollis ac nisl. Integer neque nibh, bibendum vel leo non, lacinia ullamcorper elit. Morbi gravida sem eget nisl scelerisque pretium. Aenean porta nisi nisl, eu tempor purus luctus nec. Nunc tempor pulvinar eleifend. Proin posuere enim nisl, quis pretium dui fermentum eu.
+							
+							Mauris pellentesque luctus felis ac venenatis. Fusce tincidunt at lectus et tincidunt. Nam eget pharetra magna, facilisis tempus sem. Integer elit ante, sodales a aliquam id, mollis non velit. Suspendisse hendrerit auctor augue tempus auctor. Vestibulum bibendum quam vel eleifend scelerisque. Fusce vitae risus at ex sollicitudin ullamcorper id eget ante. Proin scelerisque porta urna, nec convallis sapien rhoncus ac. Mauris pretium, sem a auctor tristique, libero enim ornare lacus, nec sodales nisi enim vitae erat. Nam aliquam, justo non finibus convallis, ipsum metus laoreet nunc, et tristique enim ex porttitor justo. Sed viverra ex ac neque sollicitudin imperdiet.
+						</p>
+						<div>
+							<p><br><hr></p>
+							<p class="text-right"><a href="#top">(End of Beef Section)    Back to Top</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> <!-- End section "row" -->
+
+			<section class="row">
+				<div class="col-xs-12">
+					<div class="sect-3">
+						<h2 id="sushi" class="text-center"> Sushi</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut urna id vestibulum. Praesent porttitor, mauris dapibus finibus pulvinar, orci turpis dapibus leo, ornare scelerisque ligula mauris a mauris. Sed sem lacus, bibendum at interdum eget, posuere non nisi. Sed ligula odio, pellentesque at consequat non, vestibulum ac ex. Quisque ut pellentesque ex, ut viverra velit. Phasellus a lobortis arcu, ut porttitor sem. Vivamus pellentesque augue quis nunc placerat, a vulputate urna imperdiet. Fusce a ex felis. Vestibulum semper urna lorem. Praesent fringilla consequat tempor. Praesent iaculis nulla at nisi dictum luctus. Nulla sit amet neque a risus rutrum efficitur. Ut nunc magna, pellentesque sit amet elit non, porttitor fermentum orci. Sed vitae mauris risus.
+							Etiam scelerisque at arcu quis bibendum. Aenean vitae urna finibus odio malesuada rhoncus et ut ante. Sed convallis eros non diam sodales accumsan. Curabitur scelerisque, lorem eget pretium efficitur, eros nibh pellentesque mi, eget ultricies neque lacus quis ligula. Mauris placerat magna ex, vel ullamcorper massa commodo a. Nam ac fringilla nisl, non finibus tortor. In ultrices tempor ipsum id elementum. Curabitur ac dui ut nisl interdum faucibus quis ac est. Phasellus non vehicula dui, ut pretium ligula. Nullam euismod neque congue velit semper, non blandit libero tempor. Maecenas sem purus, rutrum vel pellentesque et, tempor id purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer fringilla blandit porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed porta leo. Quisque quam nisl, finibus a placerat vel, iaculis sit amet augue.
+
+							Vestibulum sollicitudin pellentesque neque, a dapibus ex rhoncus id. Phasellus facilisis, urna id bibendum hendrerit, ante odio dignissim mi, in imperdiet metus mauris vel elit. Praesent sagittis tempor orci vitae tincidunt. Vivamus non sem sodales erat luctus viverra. Etiam id est eget odio viverra mollis. Donec vulputate vulputate sagittis. Aenean vel fermentum diam, quis volutpat tortor.
+							
+							Nullam quis eros suscipit, pellentesque eros ut, tincidunt sapien. Integer massa velit, mollis sit amet gravida eu, accumsan quis libero. Pellentesque luctus urna a laoreet aliquam. Suspendisse tristique velit id ultrices consequat. Phasellus sed vehicula arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus purus sit amet nulla elementum, sit amet efficitur mi mattis.
+							
+							Mauris metus risus, consequat in laoreet quis, efficitur non urna. Proin quis ornare mauris. Maecenas laoreet vestibulum faucibus. Nulla dapibus leo mollis mollis interdum. Fusce dapibus aliquam congue. Fusce imperdiet, nisi sodales dapibus vestibulum, odio nibh porta ligula, at faucibus lectus odio vitae dolor. Etiam congue nunc vitae diam lacinia rutrum.
+						</p>
+						<div>
+							<p><br><hr></p>
+							<p class="text-right"><a href="#top">(End of Sushi Section)    Back to Top</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>  <!-- End section "row" -->
+		</section> <!-- section class "sect-2" -->
+
+
+
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

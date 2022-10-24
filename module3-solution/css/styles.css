@@ -1,0 +1,163 @@
+body {
+  font-size: 16px;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+.row{ /* extend all the way to the edges of the browser */
+	width: 100%;
+}
+/** HEADER **/
+#header-nav {
+  /* background-color: #f6b319;  nice orange/yelowish from Lecturer */
+	background-color: #fff;
+	/* fix rounded border around showing around the corners) */
+	border-radius: 0;
+	border: 3px solid black;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	margin-bottom: 0;
+}
+#header-nav a:hover {
+	background: #E7E7E7;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  /* color: #368120;  nice green from Lecture's sources*/
+	color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 1px #222; did not work well with black */
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75; /* squeeze it a bit */
+}
+/* restataurant title displayed underlined; get rid of underline */
+/* make clickable */
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 15px; /* separate from the title by 15px) */
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+/* entire list of selectables (menu icons, phones, etc) on the right of the nav-header */
+#nav-list {
+  margin-top: 25px;
+}
+#nav-list a {
+	color: #000;
+  text-align: center;
+	border-bottom: 3px solid black;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+/* menu icon when viewing size is xs */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -40px;
+/* END HEADER */
+}
+
+/* Note: for this assignment, only use xs (xtra small) sized devices
+/********** Large devices only **********/
+@media (min-width: 1200px){
+/* not used in this assignment */
+}
+
+/********** Medium size devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+/* not used in this assignment */
+}
+
+/********** Small size devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+/* not used in this assignment */
+}
+
+/********** Extra small size devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 15px;
+    height: 75px;
+  }
+  .navbar-brand h1 { /* reduce Restaur. name when in xs size */
+    padding-top: 25px;
+    font-size: 4vw; /* 1vw = 1% of viewport width. vw units are responsive */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+	#collapsable-nav a:hover {
+		background-color: rgb(185, 190, 195);
+	}
+	/* Override the span font to be 1em that of <a, so the Menu and cutlery are both the same size */
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+	#collapsable-nav ul{
+		clear: both;
+		color: #000;
+	}
+	.sect-2 h1{  /* emphasize menu to viewer in xs size */
+		padding-top: 0px;
+		font-size: 3.0em;
+	}
+}
+/* section 2: contains text: Our Menu */
+#h1 {   /* Title: Our Menu */
+	margin-bottom: 10px;
+	margin-top: -15px;
+	font-size: 1.7em;
+	line-height: 2.1;
+}
+/* section for categories types: chicken, beef, sushi */
+.sect-cat {
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	margin-top: -20px;
+	height: 100%;
+	font-size: 1.2em;
+}
+.sect-2 {
+	background-color: #fff;
+	/* color: #000;*/
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	height: 100%;
+}
+/* End section 2 */
+
+/* section 3: menu category details/dishes */
+.sect-3{
+	clear: both;
+	/* background-color: rgb(179, 170, 170); */
+	background-color: rgb(185, 184, 184);
+	color: #000;
+	/* border encompassing text in section 3 during testing */
+	/*border-right: 3px solid black;
+		border-left: 3px solid black; */
+	padding-left: 40px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
